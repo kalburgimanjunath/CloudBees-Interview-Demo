@@ -57,12 +57,11 @@ export default function UserList() {
               >
                 <Image
                   src={item && item['avatar_url'] ? item['avatar_url'] : ''}
-                  width={100}
-                  height={100}
+                  className="object-none h-48 w-96"
                   alt={item['login']}
                 />
 
-                {item['login'].toUpperCase()}
+                {item['login']}
               </Link>
             );
           })}
